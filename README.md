@@ -1,39 +1,60 @@
-# Portal Growth para Educação — Acervo de Material Rico
+# Growth Hub — Portal de Material Rico
 
-Site estático (HTML/CSS/JS puro, sem build) para captura de leads via papers, frameworks
-e ferramentas voltados a empreendedores, especialistas e líderes de receita da educação.
+Site estático (HTML/CSS/JS puro, sem build) para captura de leads via frameworks,
+ferramentas e análises voltados a quem lidera receita em negócios de qualquer porte.
+
+No ar em: **https://guilhermesangesgrowth-maker.github.io/hub/**
 
 ## Estrutura
 
 ```
-index.html          página única (hero, acervo, método, sobre, rodapé, modal de captura)
-css/styles.css       estilos (mobile-first)
-js/deliverables-data.js   catálogo de entregáveis (editar aqui para adicionar/remover materiais)
-js/main.js           lógica de filtro, carrossel e formulário
-server.ps1            servidor local só para pré-visualização (não sobe pro GitHub)
+index.html                página única (hero, mercado, acervo, método, autor, rodapé, modal de captura)
+css/styles.css             estilos (mobile-first)
+js/deliverables-data.js    catálogo de entregáveis (editar aqui para adicionar/remover materiais)
+js/main.js                 lógica de filtro, carrossel, prévia interativa e formulário
+materiais/                 arquivos reais dos materiais (PDFs) já publicados
+google-apps-script.gs      script para colar no Google Apps Script (ver seção de Leads abaixo)
+server.ps1                 servidor local só para pré-visualização (não sobe pro GitHub)
 ```
 
 ## Como editar o catálogo
 
 Cada entregável em `js/deliverables-data.js` tem:
-- `category` / `categoryLabel`: área (financas, marketing, vendas, ia, produto, tecnologia, operacoes)
-- `type` / `typeLabel`: framework, análise ou ferramenta
+- `category` / `categoryLabel`: área (financas, marketing, vendas, ia, produto, tecnologia, gestao, operacoes)
+- `challenges`: um ou mais desafios que o material resolve (otimizar-marca, gerar-demanda,
+  aumentar-conversao, melhorar-processos, aumentar-margem, engajar-time) — usado no segundo filtro
+- `type` / `typeLabel`: `type` controla o formato da prévia interativa (framework/ferramenta/analise);
+  `typeLabel` é o rótulo específico mostrado no card (Framework, Playbook, Calculadora, etc.)
 - `title`, `teaser`, `description`
 - `fileUrl`: deixe vazio até o material existir. Quando publicar o PDF/planilha (ex: link do
-  Google Drive), cole a URL aqui e o botão de download passa a aparecer depois do cadastro.
+  Google Drive, ou um arquivo em `materiais/`), cole o caminho aqui e o botão de download passa
+  a aparecer depois do cadastro.
 
-## Leads (hoje) e integração futura com Google Sheets
+## Leads e integração com Google Sheets
 
-Por enquanto, cada envio do formulário:
-1. Salva no `localStorage` do navegador (só para teste, chave `leads`).
+Cada envio do formulário:
+1. Salva no `localStorage` do navegador (fallback local, sempre ativo).
 2. Loga no console (`[lead capturado]`).
 3. Se `CONFIG.SHEETS_WEBHOOK_URL` (em `js/main.js`) estiver preenchido, envia um POST para essa URL.
 
-Quando formos integrar o Google Sheets:
-1. Criar uma planilha e um **Google Apps Script** publicado como *Web App* (`doPost` gravando
-   a linha na planilha).
-2. Colar a URL do Web App em `CONFIG.SHEETS_WEBHOOK_URL`.
-Não precisa mudar mais nada no front-end.
+### Passo a passo para conectar ao Google Sheets
+
+1. Crie uma planilha nova em [sheets.new](https://sheets.new). Dê um nome, ex: "Leads — Growth Hub".
+2. Menu **Extensões → Apps Script**.
+3. Apague o código de exemplo e cole o conteúdo de `google-apps-script.gs` (deste repositório).
+4. Salve o projeto (ícone de disquete). Dê um nome, ex: "Growth Hub Leads".
+5. Clique em **Implantar → Nova implantação**.
+6. No ícone de engrenagem, escolha o tipo **App da Web**.
+7. Configure: "Executar como" = **Eu (sua conta)**; "Quem pode acessar" = **Qualquer pessoa**.
+8. Clique em **Implantar**. O Google vai pedir autorização (é o seu próprio script pedindo acesso
+   à sua própria planilha — clique em "Avançado" → "Acessar projeto (não seguro)" se aparecer o aviso).
+9. Copie a **URL do app da Web** (termina em `/exec`).
+10. Cole essa URL em `CONFIG.SHEETS_WEBHOOK_URL`, no topo de `js/main.js`.
+11. Suba a mudança (`git add`, `git commit`, `git push`) — o GitHub Pages atualiza sozinho.
+
+Depois de conectado, cada lead vira uma linha na aba "Leads" da planilha, com nome, e-mail,
+telefone, cargo, segmento, tamanho da empresa, opt-in de marketing, material baixado e data/hora.
+Não precisa mudar mais nada no front-end depois disso.
 
 ## Publicar no GitHub Pages
 
