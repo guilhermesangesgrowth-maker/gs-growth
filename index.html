@@ -1,0 +1,469 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Growth Hub | Guilherme Sanges</title>
+  <meta name="description" content="O maior hub de growth do BR. Frameworks, ferramentas e playbooks gratuitos para otimizar a sua máquina de receita." />
+
+  <!-- SEO -->
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Guilherme Sanges" />
+  <meta name="language" content="pt-BR" />
+  <!-- TODO: trocar pelo domínio final antes de publicar (GitHub Pages ou domínio próprio) -->
+  <link rel="canonical" href="https://growth-hub.guilhermesanges.com.br/" />
+
+  <!-- Open Graph / redes sociais -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Growth Hub" />
+  <meta property="og:title" content="Growth Hub | Guilherme Sanges" />
+  <meta property="og:description" content="O maior hub de growth do BR. Frameworks, ferramentas e playbooks gratuitos para otimizar a sua máquina de receita." />
+  <meta property="og:url" content="https://growth-hub.guilhermesanges.com.br/" />
+  <meta property="og:image" content="https://growth-hub.guilhermesanges.com.br/assets/guilherme-foto.jpg" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Growth Hub | Guilherme Sanges" />
+  <meta name="twitter:description" content="O maior hub de growth do BR. Frameworks, ferramentas e playbooks gratuitos para otimizar a sua máquina de receita." />
+  <meta name="twitter:image" content="https://growth-hub.guilhermesanges.com.br/assets/guilherme-foto.jpg" />
+
+  <!-- Page health -->
+  <meta name="theme-color" content="#0A0A0A" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%230A0A0A%22/><text x=%2250%22 y=%2266%22 font-size=%2260%22 fill=%22%23FF6B00%22 text-anchor=%22middle%22 font-family=%22Arial%22>G</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Archivo+Black&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- GEO / dados estruturados: identifica autor, site e organização para buscadores e motores de IA -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://growth-hub.guilhermesanges.com.br/#website",
+        "url": "https://growth-hub.guilhermesanges.com.br/",
+        "name": "Growth Hub",
+        "description": "O maior hub de growth do BR. Frameworks, ferramentas e playbooks gratuitos para otimizar a sua máquina de receita.",
+        "inLanguage": "pt-BR",
+        "publisher": { "@id": "https://growth-hub.guilhermesanges.com.br/#person" }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://growth-hub.guilhermesanges.com.br/#person",
+        "name": "Guilherme Sanges",
+        "jobTitle": "Especialista em Growth",
+        "description": "Guilherme é Especialista em Growth e já gerou mais de R$1Bi com ações de marketing e vendas para empresas.",
+        "url": "https://growth-hub.guilhermesanges.com.br/",
+        "sameAs": [
+          "https://instagram.com/guilherme.sanges.growth"
+        ]
+      },
+      {
+        "@type": "ItemList",
+        "@id": "https://growth-hub.guilhermesanges.com.br/#acervo",
+        "name": "Acervo de materiais de growth",
+        "description": "Frameworks, ferramentas e análises gratuitos para otimizar a máquina de receita de qualquer negócio."
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#top" class="nav__logo">GROWTH<span>/</span>HUB</a>
+      <nav class="nav__links">
+        <a href="#mercado">Mercado</a>
+        <a href="#acervo">Materiais</a>
+        <a href="#metodo">Método</a>
+        <a href="#sobre">Autor</a>
+      </nav>
+      <a href="#acervo" class="btn btn--ghost nav__cta">Conferir Materiais</a>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- DOBRA 1 — HERO -->
+    <section class="hero" id="hero">
+      <div class="hero__bg" aria-hidden="true">
+        <div class="hero__grid"></div>
+        <div class="hero__glow"></div>
+      </div>
+      <div class="hero__content">
+        <a href="#sobre" class="author-chip" aria-label="Conheça Guilherme Sanges, especialista em growth">
+          <img class="author-chip__photo" src="assets/guilherme-avatar.jpg" alt="Guilherme Sanges" width="44" height="44" decoding="async" fetchpriority="high" />
+          <span class="author-chip__text">
+            <strong>Guilherme Sanges</strong>
+            <small>Especialista em Growth</small>
+          </span>
+          <span class="author-chip__arrow" aria-hidden="true">↓</span>
+        </a>
+        <p class="eyebrow">ready, set, growth!</p>
+        <h1 class="hero__title">
+          Otimize a sua
+          <span class="text-orange">máquina de receita</span>
+          ainda hoje
+        </h1>
+        <p class="hero__subtitle">
+          Escolha dentre +100 frameworks, ferramentas e playbooks para gerar crescimento!
+        </p>
+        <div class="hero__actions">
+          <a href="#metodo" class="btn btn--primary">Otimizar Receita</a>
+          <a href="https://api.whatsapp.com/send/?phone=5519998878022&amp;text=Ol%C3%A1,%20vi%20o%20hub%20de%20growth%20e%20gostaria%20de%20otimizar%20receita!" class="btn btn--text" target="_blank" rel="noopener">Falar sobre Growth <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="hero__stats" id="heroStats">
+          <div class="stat">
+            <span class="stat__value">+R$1Bi</span>
+            <span class="stat__label">de receita gerada</span>
+          </div>
+          <div class="stat">
+            <span class="stat__value">+12</span>
+            <span class="stat__label">segmentos validados</span>
+          </div>
+          <div class="stat">
+            <span class="stat__value">+100</span>
+            <span class="stat__label">materiais para growth</span>
+          </div>
+          <div class="stat">
+            <span class="stat__value">24/7</span>
+            <span class="stat__label">atualização semanal para alta competitividade</span>
+          </div>
+        </div>
+      </div>
+      <button class="scroll-cue" id="scrollCue" aria-label="Rolar para a próxima seção">
+        <span></span>
+      </button>
+    </section>
+
+    <!-- DOBRA 2 — TESE E MERCADO -->
+    <section class="deck deck--tone" id="mercado">
+      <div class="deck__header">
+        <p class="eyebrow">O mercado está de ponta cabeça!</p>
+        <h2 class="deck__title">O mercado que você conheceu não existe mais</h2>
+        <p class="deck__subtitle">
+          A lógica mudou, tecnologia e pessoas são uma só. Empresas que querem ser
+          competitivas e perpetuarem precisam dominar o jogo da Receita.
+        </p>
+      </div>
+
+      <div class="shift" role="group" aria-label="Diagrama: como a lógica de receita mudou com o avanço da IA">
+        <figure class="shift__panel shift__panel--before">
+          <figcaption><span class="shift__tag">Antes</span>Lógica em cadeia</figcaption>
+          <ol class="chain">
+            <li>Pessoas</li>
+            <li>Marketing</li>
+            <li>Vendas</li>
+            <li class="chain__end">Receita</li>
+          </ol>
+          <p class="shift__note">Cada área executa a sua parte e passa o bastão. Vender mais pedia contratar mais.</p>
+        </figure>
+
+        <div class="shift__arrow" aria-hidden="true"></div>
+
+        <figure class="shift__panel shift__panel--after">
+          <figcaption><span class="shift__tag">Agora</span>Lógica em camadas</figcaption>
+          <div class="stack">
+            <div class="stack__row stack__row--top">Receita</div>
+            <div class="stack__row stack__row--mid">
+              <span>Marketing</span>
+              <span>Vendas</span>
+            </div>
+            <div class="stack__row stack__row--base">
+              <strong>Tecnologia + Pessoas</strong>
+              <small>a IA executa, o time orquestra</small>
+            </div>
+          </div>
+          <p class="shift__note">Marketing e vendas viram uma jornada só, sustentada por tecnologia e pessoas trabalhando como uma camada única.</p>
+        </figure>
+      </div>
+    </section>
+
+    <!-- DOBRA 3 — ACERVO -->
+    <section class="deck deck--light" id="acervo">
+      <div class="deck__header">
+        <p class="eyebrow eyebrow--dark">O maior hub de growth do BR!</p>
+        <h2 class="deck__title">Sua máquina de receita tem um problema, a solução está aqui</h2>
+        <p class="deck__subtitle">
+          Cada material nasce de uma solução validada após um problema real de quem opera
+          receita: especialistas, times comerciais, gestores e fundadores de negócios de
+          todos os portes e segmentos.
+        </p>
+      </div>
+
+      <div class="filters-row">
+        <label class="filter-select">
+          <span>Filtre por área</span>
+          <select id="filterCategory" aria-label="Filtrar por área"></select>
+        </label>
+        <label class="filter-select">
+          <span>Filtre por desafio</span>
+          <select id="filterChallenge" aria-label="Filtrar por desafio"></select>
+        </label>
+      </div>
+
+      <div class="carousel-wrap">
+        <button class="carousel-nav carousel-nav--prev" id="carouselPrev" aria-label="Anterior">‹</button>
+        <div class="carousel" id="carousel" tabindex="0"></div>
+        <button class="carousel-nav carousel-nav--next" id="carouselNext" aria-label="Próximo">›</button>
+      </div>
+      <p class="carousel-hint">Arraste para o lado para ver mais →</p>
+      <p class="carousel-empty" id="carouselEmpty" hidden>Nenhum material com essa combinação de área e desafio ainda. Tente outro filtro.</p>
+    </section>
+
+    <!-- DOBRA 4 — O MÉTODO -->
+    <section class="deck deck--tone" id="metodo">
+      <div class="deck__header">
+        <p class="eyebrow">O Método</p>
+        <h2 class="deck__title">A tecnologia muda, os fundamentos não</h2>
+        <p class="deck__subtitle">
+          A essência da máquina de receita não muda. Até quando você será refém das mudanças
+          da tecnologia? Empresas líderes de mercado não sofrem com mudanças porque possuem
+          fundamentos estabelecidos e alinhados com o cliente.
+        </p>
+      </div>
+
+      <div class="method" id="method">
+<svg class="method__svg" id="vennSvg" viewBox="0 0 400 400" role="group" aria-label="Diagrama Venn com quatro círculos que se cruzam: Mercado, Negócio, Growth e Tecnologia">
+  <g class="venn">
+    <circle class="ring" data-key="mercado" tabindex="0" role="button" aria-label="Mercado" cx="200" cy="138" r="115" />
+    <circle class="ring" data-key="negocio" tabindex="0" role="button" aria-label="Negócio" cx="262" cy="200" r="115" />
+    <circle class="ring" data-key="growth" tabindex="0" role="button" aria-label="Growth" cx="200" cy="262" r="115" />
+    <circle class="ring" data-key="tecnologia" tabindex="0" role="button" aria-label="Tecnologia" cx="138" cy="200" r="115" />
+  </g>
+  <circle class="venn__core" cx="200" cy="200" r="46" />
+  <text class="ring__label" data-key="mercado" x="200" y="70">MERCADO</text>
+  <text class="ring__label" data-key="negocio" x="335" y="204">NEGÓCIO</text>
+  <text class="ring__label" data-key="growth" x="200" y="338">GROWTH</text>
+  <text class="ring__label" data-key="tecnologia" x="64" y="204">TECNOLOGIA</text>
+  <text class="core__label" x="200" y="197">MÁQUINA</text>
+  <text class="core__label" x="200" y="210">DE RECEITA</text>
+</svg>
+
+        <div class="method__panel">
+          <ul class="method__list">
+            <li><button type="button" class="method__item is-active" data-key="mercado">Mercado</button></li>
+            <li><button type="button" class="method__item" data-key="negocio">Negócio</button></li>
+            <li><button type="button" class="method__item" data-key="growth">Growth</button></li>
+            <li><button type="button" class="method__item" data-key="tecnologia">Tecnologia</button></li>
+          </ul>
+          <div class="method__detail" id="methodDetail" aria-live="polite">
+            <h3 id="methodDetailTitle">Mercado</h3>
+            <p class="method__hook" id="methodDetailHook">Seu cliente muda, você acompanha?</p>
+            <p id="methodDetailText">Em 2026 o mercado é dinâmico e ganha o jogo quem tem dados, tecnologia e eficiência operacional alinhados para acompanhar.</p>
+          </div>
+          <p class="method__hint">Passe o mouse ou toque em um círculo para ver o detalhe.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- DOBRA 5 — AUTOR -->
+    <section class="deck deck--light" id="sobre">
+      <div class="about">
+        <div class="about__media">
+          <p class="eyebrow eyebrow--dark">autor</p>
+          <h2 class="deck__title about__name">Guilherme Sanges</h2>
+          <div class="about__frame">
+            <img class="about__photo" src="assets/guilherme-foto.jpg" alt="Guilherme Sanges, especialista em growth" width="720" height="720" loading="lazy" decoding="async" />
+          </div>
+        </div>
+        <div class="about__content">
+          <p class="about__lead">
+            Guilherme é Especialista em Growth e já gerou mais de R$1Bi com ações de marketing
+            e vendas para empresas. Aficionado por como negócios geram vantagem competitiva na
+            era da IA e tecnologia, é estudioso e produtor de conteúdo sobre o tema.
+          </p>
+          <p class="about__thesis">
+            Sua tese é simples: <strong>fundamentos sólidos + intensidade tecnológica + cultura de resultado.</strong>
+          </p>
+          <p class="about__follow">Conheça as redes e acompanhe:</p>
+          <div class="about__socials">
+            <a class="social-card" href="https://instagram.com/guilherme.sanges.growth" target="_blank" rel="noopener">
+              <span class="social-card__icon">IG</span>
+              <span class="social-card__meta">
+                <strong>Instagram</strong>
+                <small>@guilherme.sanges.growth</small>
+              </span>
+              <span class="social-card__cta">Seguir →</span>
+            </a>
+            <a class="social-card" href="https://linkedin.com" target="_blank" rel="noopener">
+              <span class="social-card__icon">in</span>
+              <span class="social-card__meta">
+                <strong>LinkedIn</strong>
+                <small>Guilherme Sanges</small>
+              </span>
+              <span class="social-card__cta">Conectar →</span>
+            </a>
+            <a class="social-card social-card--primary" href="https://api.whatsapp.com/send/?phone=5519998878022&amp;text=Ol%C3%A1,%20vi%20o%20hub%20de%20growth%20e%20gostaria%20de%20otimizar%20receita!" target="_blank" rel="noopener">
+              <span class="social-card__icon">WA</span>
+              <span class="social-card__meta">
+                <strong>WhatsApp</strong>
+                <small>Converse comigo sobre crescimento</small>
+              </span>
+              <span class="social-card__cta">Falar sobre growth →</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <span class="nav__logo nav__logo--footer">GROWTH<span>/</span>HUB</span>
+        <p>O maior hub de growth do BR.</p>
+      </div>
+      <div class="footer__links">
+        <div class="footer__col">
+          <strong>Navegue</strong>
+          <a href="#mercado">Mercado</a>
+          <a href="#acervo">Materiais</a>
+          <a href="#metodo">Método</a>
+          <a href="#sobre">Autor</a>
+        </div>
+        <div class="footer__col">
+          <strong>Redes</strong>
+          <a href="https://instagram.com/guilherme.sanges.growth" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://api.whatsapp.com/send/?phone=5519998878022&amp;text=Ol%C3%A1,%20vi%20o%20hub%20de%20growth%20e%20gostaria%20de%20otimizar%20receita!" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© <span id="year"></span> Guilherme Sanges. Ao enviar seus dados você concorda em receber comunicações sobre growth e novidades. Seus dados não são compartilhados com terceiros.</p>
+    </div>
+  </footer>
+
+  <!-- MODAL -->
+  <div class="modal-backdrop" id="modalBackdrop">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal__close" id="modalClose" aria-label="Fechar">✕</button>
+
+      <div class="modal__body" id="modalStepPreview">
+        <span class="modal__tag" id="modalTag"></span>
+        <h3 class="modal__title" id="modalTitle"></h3>
+        <p class="modal__desc" id="modalDesc"></p>
+
+        <div class="preview-box" id="previewBox">
+          <button type="button" class="preview-doc" id="previewTrigger" aria-haspopup="true" aria-expanded="false">
+            <div class="preview-doc__blur">
+              <div class="preview-doc__line long"></div>
+              <div class="preview-doc__line"></div>
+              <div class="preview-doc__line short"></div>
+              <div class="preview-doc__block"></div>
+              <div class="preview-doc__line"></div>
+              <div class="preview-doc__line long"></div>
+            </div>
+            <div class="preview-doc__cta">▶ <span>Ver prévia interativa</span></div>
+          </button>
+
+          <div class="preview-lightbox" id="previewLightbox" hidden>
+            <div class="preview-lightbox__bar">
+              <span id="previewPageLabel">Página 1 de 3</span>
+              <button type="button" class="preview-lightbox__close" id="previewClose" aria-label="Fechar prévia">✕</button>
+            </div>
+            <div class="preview-lightbox__stage" id="previewStage"></div>
+            <div class="preview-lightbox__nav">
+              <button type="button" id="previewPrev" aria-label="Página anterior">‹</button>
+              <div class="preview-lightbox__dots" id="previewDots"></div>
+              <button type="button" id="previewNext" aria-label="Próxima página">›</button>
+            </div>
+          </div>
+        </div>
+
+        <h4 class="lead-form__title">Acesse o material grátis agora</h4>
+        <form class="lead-form" id="leadForm">
+          <div class="lead-form__row">
+            <label>
+              Nome completo
+              <input type="text" name="nome" required autocomplete="name" />
+            </label>
+          </div>
+          <div class="lead-form__row lead-form__row--split">
+            <label>
+              E-mail
+              <input type="email" name="email" required autocomplete="email" />
+            </label>
+            <label>
+              Telefone
+              <input type="tel" name="telefone" required autocomplete="tel" placeholder="(11) 90000-0000" />
+            </label>
+          </div>
+          <div class="lead-form__row lead-form__row--split">
+            <label>
+              Cargo
+              <select name="cargo" required>
+                <option value="" disabled selected>Selecione</option>
+                <option>Autônomo(a)</option>
+                <option>Estagiário(a) / Analista</option>
+                <option>Especialista / Coordenador(a)</option>
+                <option>Gerente / Head</option>
+                <option>Diretor(a) / C-Level</option>
+                <option>Fundador(a) / Empresário(a)</option>
+                <option>Outro</option>
+              </select>
+            </label>
+            <label>
+              Segmento
+              <select name="segmento" required>
+                <option value="" disabled selected>Selecione</option>
+                <option>Educação</option>
+                <option>Tecnologia e Software</option>
+                <option>Varejo e Consumo</option>
+                <option>Saúde e Bem-estar</option>
+                <option>Serviços Financeiros</option>
+                <option>Indústria e Manufatura</option>
+                <option>Agronegócio</option>
+                <option>Imobiliário e Construção</option>
+                <option>Alimentação e Bebidas</option>
+                <option>Turismo e Hospitalidade</option>
+                <option>Marketing e Publicidade</option>
+                <option>Consultoria e Serviços Profissionais</option>
+                <option>Outro</option>
+              </select>
+            </label>
+          </div>
+          <div class="lead-form__row">
+            <label>
+              Número de pessoas
+              <select name="tamanho" required>
+                <option value="" disabled selected>Selecione</option>
+                <option>Autônomo(a)</option>
+                <option>1 a 10 pessoas</option>
+                <option>11 a 100 pessoas</option>
+                <option>101 a 500 pessoas</option>
+                <option>501 a 1.000 pessoas</option>
+                <option>+1.000 pessoas</option>
+              </select>
+            </label>
+          </div>
+          <label class="lead-form__optin">
+            <input type="checkbox" name="optin" />
+            <span>Quero receber comunicações de marketing sobre growth e novidades.</span>
+          </label>
+          <button type="submit" class="btn btn--primary lead-form__submit">
+            Acessar material grátis
+          </button>
+          <p class="lead-form__note">Seus dados são usados apenas para enviar este material e conteúdos sobre growth para educação.</p>
+        </form>
+      </div>
+
+      <div class="modal__body modal__body--success" id="modalStepSuccess" hidden>
+        <div class="success-icon">✓</div>
+        <h3 class="modal__title">Cadastro confirmado</h3>
+        <p class="modal__desc" id="modalSuccessText"></p>
+        <a class="btn btn--primary" id="modalDownload" href="#" target="_blank" rel="noopener" hidden>Baixar material</a>
+        <p class="lead-form__note" id="modalPendingNote"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/deliverables-data.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

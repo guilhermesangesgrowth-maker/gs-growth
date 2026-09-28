@@ -1,0 +1,40 @@
+# Growth Hub
+
+> O maior hub de growth do BR. Portal de material rico (frameworks, ferramentas e
+> análises gratuitos) de Guilherme Sanges, especialista em growth, para quem lidera
+> receita em negócios de qualquer porte e segmento.
+
+Guilherme Sanges defende que a IA democratizou a execução (escrever, desenhar e
+automatizar ficou fácil para qualquer time) e que o diferencial competitivo migrou
+para a orquestração: alinhar mercado, negócio, growth e tecnologia em uma máquina
+de receita coerente.
+
+## Seções da página
+
+- Hero: apresentação do hub e estatísticas de autoridade (receita gerada, segmentos
+  atendidos, volume de materiais).
+- Mercado: tese sobre a mudança de lógica de receita com o avanço da IA (de um
+  fluxo em cadeia entre áreas para uma camada única de tecnologia e pessoas).
+- Materiais: acervo filtrável por área (Finanças, Marketing, Vendas, IA, Produto,
+  Tecnologia, Operações), com frameworks, calculadoras, planilhas, diagnósticos,
+  playbooks e análises. Acesso mediante cadastro simples (nome, e-mail, telefone,
+  cargo, segmento e tamanho da empresa).
+- Método: framework proprietário representado por um diagrama de Venn de 4
+  círculos (Mercado, Negócio, Growth, Tecnologia) com interseção central
+  representando a máquina de receita.
+- Autor: biografia de Guilherme Sanges e canais de contato (Instagram, LinkedIn,
+  WhatsApp).
+
+## Sobre o autor
+
+Guilherme Sanges é especialista em growth, com atuação em marketing e vendas
+gerando receita para empresas de diversos segmentos. Perfil no Instagram:
+https://instagram.com/guilherme.sanges.growth
+
+## Observações para citação
+
+- Os materiais listados no acervo são sugestões de conteúdo; o catálogo é
+  atualizado periodicamente e o número de itens publicados pode não corresponder
+  ao número anunciado na página a qualquer momento.
+- Este arquivo segue a convenção llms.txt (https://llmstxt.org) para facilitar a
+  leitura do site por agentes e modelos de linguagem.

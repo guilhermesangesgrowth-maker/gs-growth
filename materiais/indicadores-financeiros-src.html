@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<title>Indicadores Financeiros Essenciais</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Archivo+Black&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet" />
+<style>
+  @page { size: 210mm 250mm; margin: 0; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    width: 210mm;
+    height: 250mm;
+    background: #f5f3ef;
+    color: #0a0a0a;
+    font-family: "Archivo", Arial, sans-serif;
+    padding: 16mm 18mm;
+  }
+  .eyebrow {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 10px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #c94f00;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+  .eyebrow::before { content: ""; width: 16px; height: 1px; background: #c94f00; }
+  h1 {
+    font-family: "Archivo Black", "Archivo", sans-serif;
+    font-size: 26px;
+    line-height: 1.1;
+    margin: 0 0 8px;
+    max-width: 90%;
+  }
+  .subtitle { font-size: 12px; color: #5c5a54; max-width: 92%; line-height: 1.5; margin-bottom: 14px; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+  .card {
+    border: 1px solid rgba(10,10,10,0.14);
+    border-radius: 8px;
+    padding: 10px 12px;
+    background: #fff;
+  }
+  .card__num {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 10px;
+    color: #c94f00;
+    font-weight: 600;
+  }
+  .card h2 {
+    font-family: "Archivo Black", "Archivo", sans-serif;
+    font-size: 14px;
+    margin: 2px 0 4px;
+  }
+  .card p { font-size: 10.5px; line-height: 1.45; margin: 0 0 4px; color: #2b2a28; }
+  .card .formula {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 9.5px;
+    background: #ece9e2;
+    border-radius: 5px;
+    padding: 4px 6px;
+    margin: 4px 0;
+    display: inline-block;
+  }
+  .card .watch { font-size: 9.5px; color: #5c5a54; border-top: 1px dashed rgba(10,10,10,0.16); padding-top: 4px; margin-top: 4px; }
+  .footer {
+    margin-top: 14px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(10,10,10,0.14);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 9px;
+    color: #5c5a54;
+  }
+  .footer strong { color: #0a0a0a; }
+</style>
+</head>
+<body>
+  <p class="eyebrow">Growth Hub · One-pager · Finanças</p>
+  <h1>Indicadores Financeiros que Todo Negócio Deveria Acompanhar</h1>
+  <p class="subtitle">
+    Cinco números que, juntos, mostram se o seu negócio está saudável de verdade.
+    Acompanhe-os com a mesma regularidade com que acompanha vendas.
+  </p>
+
+  <div class="grid">
+    <div class="card">
+      <span class="card__num">01</span>
+      <h2>CAC — Custo de Aquisição de Cliente</h2>
+      <p>Quanto custa, em média, conquistar um cliente novo, somando mídia, comissão e ferramentas usadas na captação.</p>
+      <span class="formula">CAC = investimento em aquisição ÷ clientes novos</span>
+      <p class="watch">Fique de olho: se o CAC sobe mês após mês sem o ticket médio acompanhar, o canal está ficando mais caro do que o retorno que ele traz.</p>
+    </div>
+
+    <div class="card">
+      <span class="card__num">02</span>
+      <h2>LTV — Valor do Tempo de Vida do Cliente</h2>
+      <p>Quanto um cliente médio gera de receita durante todo o tempo em que permanece comprando de você.</p>
+      <span class="formula">LTV = ticket médio × frequência × tempo de relacionamento</span>
+      <p class="watch">Fique de olho: LTV baixo em relação ao CAC é sinal de que o negócio está pagando caro por clientes que saem cedo demais.</p>
+    </div>
+
+    <div class="card">
+      <span class="card__num">03</span>
+      <h2>Margem de Contribuição</h2>
+      <p>O quanto sobra de cada venda depois de pagar os custos diretamente ligados a ela, antes das despesas fixas.</p>
+      <span class="formula">Margem = (receita − custos variáveis) ÷ receita</span>
+      <p class="watch">Fique de olho: uma margem apertada limita quanto você pode investir em aquisição sem colocar o caixa em risco.</p>
+    </div>
+
+    <div class="card">
+      <span class="card__num">04</span>
+      <h2>Ticket Médio</h2>
+      <p>O valor médio que cada cliente gasta por compra ou por contrato fechado.</p>
+      <span class="formula">Ticket médio = receita total ÷ número de vendas</span>
+      <p class="watch">Fique de olho: ticket médio estagnado enquanto o custo de operação sobe é sinal de que a oferta pode precisar de reposicionamento.</p>
+    </div>
+
+    <div class="card">
+      <span class="card__num">05</span>
+      <h2>Fluxo de Caixa Operacional</h2>
+      <p>A diferença entre o que entra e o que sai do caixa gerado pela operação do negócio, sem contar empréstimos ou aportes.</p>
+      <span class="formula">Fluxo = entradas operacionais − saídas operacionais</span>
+      <p class="watch">Fique de olho: lucro no papel não paga conta. É o fluxo de caixa que mostra se a operação sustenta a si mesma no dia a dia.</p>
+    </div>
+
+    <div class="card" style="background:#0a0a0a; color:#f5f3ef; border-color:#0a0a0a;">
+      <span class="card__num" style="color:#ff6b00;">+</span>
+      <h2 style="color:#f5f3ef;">Como usar isso ainda essa semana</h2>
+      <p style="color:#cfcdc6;">Escolha um desses cinco indicadores que você não olha hoje. Calcule o número atual. Defina em qual direção ele precisa se mover no próximo mês, e quem no time é responsável por acompanhá-lo.</p>
+    </div>
+  </div>
+
+  <div class="footer">
+    <span>growth-hub.guilhermesanges.com.br</span>
+    <span><strong>Guilherme Sanges</strong> · Especialista em Growth</span>
+  </div>
+</body>
+</html>
